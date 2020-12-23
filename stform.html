@@ -1,0 +1,53 @@
+<html>
+  <head lang="en">
+  	<title>Student DATA	</title>
+  	<link rel="stylesheet" href="first.css">
+  <meta charset="UTF-8">
+  <script>
+    function task() {
+        document.getElementById('displayp').innerHTML = 
+                    document.getElementById("snameId").value;
+        document.getElementById('displayq').innerHTML = 
+                    document.getElementById("ssalaryId").value;
+        document.getElementById('displayr').innerHTML = 
+                    document.getElementById("snumberId").value;
+
+    }
+  </script>
+
+  </head>
+<body style="background-color:LightGray;">
+	<h1 style="background-color:LightGray;"> Student Information</h1>
+
+  <form style="background-color:white">
+    <label style="background-color:MediumSeaGreen;"><b>sname</b></label>
+    <input type="text" name="snameId" id="snameId"
+    placeholder="Enter your Name">
+    <div id="space"> </div>
+    <br>
+    <label style="background-color:MediumSeaGreen;"><b>ssalary</b></label>
+    <input type="text" name="ssalaryId" id="ssalaryId"
+    placeholder="Enter your salary">
+    <div id="op"> </div>
+    <br/>
+    
+    <label style="background-color:MediumSeaGreen;"><b>snumber</b></label>
+    <input type="text" name="snumberId" id="snumberId"
+    placeholder="Enter your rollnumber">
+    <div id="space"> </div>
+    <br>
+    
+  </form>
+  <input type="submit" onclick="task()"><br/>
+  <input type="button" value="Go back!" onclick="history.back()"><br/>
+
+  <label style="background-color:gray">Your Name:</label>
+  <p id='displayp'></p>
+  <label style="background-color:Gray;">Your salary: </label>
+  <p><span id='displayq'></span></p>
+  <label style="background-color:Gray;">Your Number:</label>
+  <p><span id='displayr'></span></p>
+  <br>
+
+  </body>
+</html>
